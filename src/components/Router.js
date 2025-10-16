@@ -4,6 +4,10 @@ import Home from './Home'
 import Cine from './Cine'
 import Musica from './Musica'
 import FormSimple from './FormSimple'
+import Collatz from './Collatz'
+import TablaMultiplicar from './TablaMultiplicar'
+import TablaMultiplicarv2 from './TablaMultiplicarv2'
+import SeleccionMultiple from './SeleccionMultiple'
 
 export default class Router extends Component {
   render() {
@@ -11,9 +15,13 @@ export default class Router extends Component {
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/multiple" element={<SeleccionMultiple/>}/>
+            <Route path="/collatz" element={<Collatz/>}/>
             <Route path="/cine" element={<Cine/>}/>
             <Route path="/musica" element={<Musica/>}/>
             <Route path="/formsimple" element={<FormSimple/>}/>
+            <Route path="/tablamultiplicar" element={<TablaMultiplicar/>}/>
+            <Route path="/tablamultiplicar2" element={<TablaMultiplicarv2/>}/>
         </Routes>
       </BrowserRouter>
     )
